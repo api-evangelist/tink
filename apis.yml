@@ -1,0 +1,29 @@
+aid: tink
+url: https://raw.githubusercontent.com/api-evangelist/tink/refs/heads/main/apis.yml
+name: Tink
+x-type: company
+description: >-
+  Tink (a Visa company) is a European open-banking platform offering account aggregation, payments initiation, KYC, and identity verification across 3,400+ banks.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Fintech
+  - Open Banking
+  - PSD2
+  - Europe
+  - Visa
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://tink.com/
+  - type: Plans
+    url: plans/tink-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/tink-rate-limits.yml
+  - type: FinOps
+    url: finops/tink-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
