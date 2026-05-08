@@ -2,8 +2,6 @@ aid: tink
 url: https://raw.githubusercontent.com/api-evangelist/tink/refs/heads/main/apis.yml
 name: Tink
 x-type: company
-description: >-
-  Tink (a Visa company) is a European open-banking platform offering account aggregation, payments initiation, KYC, and identity verification across 3,400+ banks.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Fintech
@@ -11,13 +9,120 @@ tags:
   - PSD2
   - Europe
   - Visa
+  - Account Aggregation
+  - Payments
+  - KYC
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+description: >-
+  Tink (a Visa company) is a European open-banking platform offering account aggregation,
+  payment initiation, identity, and KYC products across 3,400+ banks. The Tink API exposes
+  Account Check, Account Aggregation, Income Check, Risk Insights, Money Manager, and Payments
+  products under a single OAuth-protected REST surface at api.tink.com.
+apis:
+  - aid: tink:account-aggregation-api
+    name: Tink Account Aggregation API
+    tags:
+      - PSD2
+      - AISP
+      - Account Information
+      - Aggregation
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://api.tink.com/api/v1
+    humanURL: https://docs.tink.com/api/account-aggregation
+    description: REST API for retrieving end-user accounts, transactions, and balances across 3,400+ European banks via PSD2 AISP.
+    properties:
+      - type: Documentation
+        url: https://docs.tink.com/api/account-aggregation
+    x-features:
+      - 3,400+ banks across Europe
+      - Accounts, transactions, balances
+      - PSD2 AISP-licensed
+    x-use-cases:
+      - PFM apps
+      - Lending decisioning
+      - Financial onboarding
+  - aid: tink:account-check-api
+    name: Tink Account Check API
+    tags:
+      - Account Verification
+      - KYC
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://api.tink.com/api/v1/account-check
+    humanURL: https://docs.tink.com/api/account-check
+    description: Verify account ownership and IBAN details for an end user.
+    properties:
+      - type: Documentation
+        url: https://docs.tink.com/api/account-check
+    x-features:
+      - Account ownership verification
+      - IBAN validation
+    x-use-cases:
+      - KYC and onboarding
+      - Payouts validation
+  - aid: tink:income-check-api
+    name: Tink Income Check API
+    tags:
+      - Income Verification
+      - Lending
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://api.tink.com/api/v1/income-check
+    humanURL: https://docs.tink.com/api/income-check
+    description: Categorized income data derived from aggregated transaction history.
+    properties:
+      - type: Documentation
+        url: https://docs.tink.com/api/income-check
+    x-features:
+      - Categorized income streams
+      - Stability scoring
+    x-use-cases:
+      - Lending underwriting
+      - Affordability checks
+  - aid: tink:risk-insights-api
+    name: Tink Risk Insights API
+    tags:
+      - Risk
+      - Lending
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://api.tink.com/api/v1/risk-insights
+    humanURL: https://docs.tink.com/api/risk-insights
+    description: Risk indicators and affordability signals derived from aggregated bank data.
+    properties:
+      - type: Documentation
+        url: https://docs.tink.com/api/risk-insights
+    x-features:
+      - Risk indicators
+      - Affordability signals
+    x-use-cases:
+      - Credit risk
+      - Underwriting
+  - aid: tink:payments-api
+    name: Tink Payments API
+    tags:
+      - PSD2
+      - PISP
+      - Payment Initiation
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://api.tink.com/api/v1/payments
+    humanURL: https://docs.tink.com/api/payments
+    description: Initiate single, recurring, and bulk SEPA / domestic-rail payments via PSD2 PISP.
+    properties:
+      - type: Documentation
+        url: https://docs.tink.com/api/payments
+    x-features:
+      - Single, recurring, and bulk payment initiation
+      - PSD2 PISP-licensed
+    x-use-cases:
+      - Account-to-account payments
+      - Pay-by-bank checkout
 common:
-  - type: Website
+  - type: Portal
     url: https://tink.com/
+  - type: Documentation
+    url: https://docs.tink.com/
+  - type: Pricing
+    url: https://tink.com/pricing/
   - type: Plans
     url: plans/tink-plans-pricing.yml
   - type: RateLimits
