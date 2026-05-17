@@ -1,7 +1,7 @@
 aid: tink
 url: https://raw.githubusercontent.com/api-evangelist/tink/refs/heads/main/apis.yml
 name: Tink
-x-type: company
+kind: company
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Fintech
