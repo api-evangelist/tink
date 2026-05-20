@@ -117,6 +117,10 @@ apis:
       - Account-to-account payments
       - Pay-by-bank checkout
 common:
+  - type: GitHubOrganization
+    url: https://github.com/fintecsystems
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/tink-ab
   - type: Portal
     url: https://tink.com/
   - type: Documentation
