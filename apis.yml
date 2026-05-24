@@ -133,6 +133,8 @@ common:
     url: rate-limits/tink-rate-limits.yml
   - type: FinOps
     url: finops/tink-finops.yml
+  - type: LLMsTxt
+    url: https://docs.tink.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
