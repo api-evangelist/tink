@@ -2,7 +2,7 @@ aid: tink
 url: https://raw.githubusercontent.com/api-evangelist/tink/refs/heads/main/apis.yml
 name: Tink
 kind: company
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Fintech
   - Open Banking
@@ -28,7 +28,7 @@ apis:
       - AISP
       - Account Information
       - Aggregation
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.tink.com/api/v1
     humanURL: https://docs.tink.com/api/account-aggregation
     description: REST API for retrieving end-user accounts, transactions, and balances across 3,400+ European banks via PSD2 AISP.
@@ -48,7 +48,7 @@ apis:
     tags:
       - Account Verification
       - KYC
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.tink.com/api/v1/account-check
     humanURL: https://docs.tink.com/api/account-check
     description: Verify account ownership and IBAN details for an end user.
@@ -66,7 +66,7 @@ apis:
     tags:
       - Income Verification
       - Lending
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.tink.com/api/v1/income-check
     humanURL: https://docs.tink.com/api/income-check
     description: Categorized income data derived from aggregated transaction history.
@@ -84,7 +84,7 @@ apis:
     tags:
       - Risk
       - Lending
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.tink.com/api/v1/risk-insights
     humanURL: https://docs.tink.com/api/risk-insights
     description: Risk indicators and affordability signals derived from aggregated bank data.
@@ -103,7 +103,7 @@ apis:
       - PSD2
       - PISP
       - Payment Initiation
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.tink.com/api/v1/payments
     humanURL: https://docs.tink.com/api/payments
     description: Initiate single, recurring, and bulk SEPA / domestic-rail payments via PSD2 PISP.
