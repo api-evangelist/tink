@@ -117,6 +117,10 @@ apis:
       - Account-to-account payments
       - Pay-by-bank checkout
 common:
+  - type: VulnerabilityDisclosure
+    url: security/tink-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/tink-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/fintecsystems
   - type: LinkedIn
@@ -135,6 +139,8 @@ common:
     url: finops/tink-finops.yml
   - type: LlmsText
     url: https://docs.tink.com/llms.txt
+  - url: https://tink.com/blog/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
