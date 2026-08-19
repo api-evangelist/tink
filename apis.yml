@@ -26,7 +26,7 @@ tags:
   - KYC
 created: '2026-05-08'
 modified: '2026-05-08'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Tink (a Visa company) is a European open-banking platform offering account aggregation,
   payment initiation, identity, and KYC products across 3,400+ banks. The Tink API exposes
